@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(images/newestBgLight.png);
+    background-color: #000000;
+}
+
+.testimonial-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #52eee1;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: url(images/newestBgLight.png);
+}
+
+.testimonial-title {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.testimonial-subtitle {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 32px;
+}
+
+.testimonial-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-slide {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.testimonial-slide.active {
+    display: flex;
+}
+
+.testimonial-quote {
+    text-align: left;
+    position: relative;
+    padding-left: 20px;
+    border-left: 3px solid #00c1ff;
+    max-width: 60%;
+}
+
+.quote-mark {
+    font-size: 40px;
+    color: #00c1ff;
+    position: absolute;
+    top: -10px;
+    left: -25px;
+}
+
+.testimonial-quote p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.testimonial-author h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 16px 0 4px;
+}
+
+.testimonial-author p {
+    font-size: 14px;
+    color: #888;
+    margin: 0;
+}
+
+.testimonial-stars span {
+    color: #ffcc00;
+    font-size: 20px;
+}
+
+.testimonial-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pagination-dot.active {
+    background-color: #00c1ff;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
