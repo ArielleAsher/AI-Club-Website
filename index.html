@@ -6,72 +6,53 @@
     <title>AI Club IGDTUW</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
-      rel="stylesheet"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./nav_footer.css" />
-    <link rel="stylesheet" href="./index.css" />
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    
+    <!-- css files -->
+    <link rel="stylesheet" href="assets/css/nav_footer.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    
     <!--footer icon link-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   </head>
 
   <body>
+
     <!-- Nav Bar - (Payal)  -->
     <div class="navbar sidebarMenu" id="navbar">
       <div class="nav-left">
         <img
-          src="logo.png"
+          src="./assets/images/logo/logo.png"
           style="filter: grayscale(50%)"
-          height="150"
+          height="125"
         />
       </div>
       <div class="nav-right">
         <a href="./index.html">Home</a>
-        <a href="./events.html">Events</a>
         <a href="#">About Us</a>
-        <a href="#">Contact us</a>
+        <a href="./pages/events.html">Events</a>
+        <a href="#">Our Team</a>
+        <a href="./pages/contact.html">Contact us</a>
       </div>
     </div>
     <!-- Nav Bar end -->
 
     <main>
       <!-- Hero  (Riya Ahlawat) -->
-      <section id="hero">
-        <section id="background">
-          <div class="bg-image"></div>
-        </section>
-        <section id="hero">
-          <div class="hero-container">
-            <div class="text">
-              <h1>AI Club</h1>
-              <br />
-              <h1><span>IGDTUW</span></h1>
-              <br>
-              <h6>Invent, Ideate, Innovate. </h6>
-            </div>
-          </div>
-        </section>
-      </section>
+      <div class="video-background">
+        <video autoplay muted loop id="bgVideo">
+            <source src="./assets/video/aiclub.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 
       <!-- About  -->
+       <!-- replace with vamikas about us section -->
       <section id="about-us" class="about-us-section">
         <div class="about-us-content">
           <h2 class="sub-heading">About AI CLUB, IGDTUW</h2>
@@ -249,7 +230,7 @@
       <!-- Prospect ends... -->
 
       <!-- Team(Trisha,Vedika) -->
-      <section id="cores" class="cores-section">
+      <!-- <section id="cores" class="cores-section">
         <h2 class="sub-heading">Cores</h2>
         <div class="cores-container-captain">
           <div class="cores-card">
@@ -571,7 +552,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section>-->
       <!-- Team(Trisha,Vedika) end -->
 
       <!-- FAQs avni -->
@@ -601,7 +582,7 @@
             and other events to help students learn about AWS services, cloud
             computing concepts, and real-world applications.
           </div>
-        </div>
+        </div> 
         <div class="faq-item">
           <h3 class="faq-question">
             What resources does AWS Cloud Club at IGDTUW provide for its
@@ -691,6 +672,6 @@
       </div>
     </footer>
     <!--Footer ends-->
-    <script src="./script-index.js"></script>
+    <script src="./assets/js/script-index.js"></script>
   </body>
 </html>

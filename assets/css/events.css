@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+:root {
+  --hover-easing: cubic-bezier(0.23, 1, 0.32, 1);
+  --return-easing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  --font-family: "Raleway", sans-serif;
+}
+
+body{
+  /* background: linear-gradient(to bottom, rgb(179, 83, 177) 0%, rgba(175,135,124,1) 65%, rgba(175,135,124,1) 100%) fixed; */
+  background-color: black;
+  font-family: Lato, sans-serif;
+}
+.the-background-div{
+  width: 100%;
+  background: url('/assets/images/bg/newestBgLight.png');
+  background-position: center;
+  /* padding: 2rem 0; */
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+
+.pastevents {
+  height: auto;
+  width: 100%;
+  margin: 20px 0;
+  font: 14px/20px "Lato", Arial, sans-serif;
+  /* font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 500; */
+  background-color: #BCAAA4;
+  -webkit-font-smoothing: antialiased;
+}
+
+.title {
+  /* font-family: "Raleway"; */
+  font-size: 24px;
+  font-weight: 700;
+  color: #5D4037;
+  text-align: center;
+}
+
+.container {
+  padding: 40px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pecard-wrap {
+  margin: 10px;
+  perspective: 800px;
+  cursor: pointer;
+  flex: 1 1 500px;
+}
+
+.pecard {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-color: #333;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: 1s var(--return-easing);
+  box-shadow: rgba(0, 0, 0, 0.33) 0 30px 60px 0, inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.3) 0 0 0 6px;
+  align-items: center;
+}
+
+.pecard-bg {
+  opacity: 0.5;
+  position: absolute;
+  top: -20px; left: -20px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: 1s var(--return-easing), opacity 5s 1s var(--return-easing);
+  pointer-events: none;
+}
+
+.pecard-info {
+  margin: auto;
+  padding: 20px;
+  position: absolute;
+  bottom: 1;
+  left:1;
+  color: #fff;
+  transform: translateY(40%);
+  transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-color: rgba(138, 24, 169, 0.756);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.pecard-info p {
+  opacity: 0;
+  /* text-shadow: rgb(122, 11, 207) 0 2px 3px; */
+  transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  font-size: 17px;
+}
+
+.pecard-info:after {
+  content: '';
+  /* position: absolute; */
+  top: 0; left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6)50%, rgba(0, 0, 0, 0.6) 100%);
+  background-blend-mode: overlay;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: 5s 1s var(--return-easing);
+}
+
+.pecard-info h1 {
+  font-family: "Playfair Display";
+  font-size: 28px;
+  font-weight: 700;
+  text-shadow: rgba(53, 0, 121, 0.971) 3px 3px 3px;
+  text-align: center;
+}
+
+.pecard-wrap:hover .pecard-info {
+  transform: translateY(0);
+}
+
+.pecard-wrap:hover .pecard-info p {
+  opacity: 1;
+}
+
+.pecard-wrap:hover .pecard-info, 
+.pecard-wrap:hover .pecard-info p,
+.pecard-btn {
+  transition: 0.6s var(--hover-easing);
+}
+
+.pecard-wrap:hover .pecard-info:after {
+  transition: 5s var(--hover-easing);
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pecard-wrap:hover .pecard-bg {
+  transition: 
+    0.6s var(--hover-easing),
+    opacity 5s var(--hover-easing);
+  opacity: 0.8;
+}
+
+.pecard-wrap:hover .pecard {
+  transition:
+    0.6s var(--hover-easing),
+    box-shadow 2s var(--hover-easing);
+  box-shadow:
+    rgba(255, 255, 255, 0.2) 0 0 40px 5px,
+    rgba(255, 255, 255, 1) 0 0 0 1px,
+    rgba(0, 0, 0, 0.66) 0 30px 60px 0,
+    inset #333 0 0 0 5px,
+    inset #fff 0 0 0 6px;
+}
+
+
+
+/* .pecard-bg:hover{
+  background-color: black;
+} */
+
+.pecard-btn {
+  display: none;
+  position: absolute;
+  bottom: 60px; /* Adjust this as needed */
+  width: 100%;
+  text-align: center;
+  transition: opacity 0.6s var(--hover-easing);
+}
+
+.pecard-btn button {
+  background-color: #9c5aad;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: large;
+  transition: background-color 0.3s;
+}
+
+.pecard-btn button:hover {
+  background-color: #472550;
+}
+
+.pecard-wrap:hover .pecard-btn {
+  display: block; 
+  opacity: 1;
+}
+
+/* .section-title{
+  font-size: 40px;
+  text-align: center;
+  margin-top: 60px;
+  color: #ffffff;
+  text-shadow: 3px 3px #8b19b4;
+} */
+
+.pastevents, .pecard, .pecard-info, .pecard-info p, .pecard-info h1 {
+    font-family: var(--font-family) !important;
+}
+
+
+/* why was a repeated body tag here?
+body {
+  background: linear-gradient(to bottom, rgb(179, 83, 177) 0%, rgba(175,135,124,1) 65%, rgba(175,135,124,1) 100%) fixed;
+  background-size: cover;
+  font: 14px/20px "Lato", Arial, sans-serif;
+  color: #9E9E9E;
+  margin-top: 30px;
+} */
+
+.slide-container {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}
+
+.wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 20px auto;
+}
+
+.uecard {
+  background: white;
+  height: 600px;
+  margin: auto;
+  border-radius: 19px;
+  position: relative;
+  text-align: center;
+  z-index: 9999;
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.uecard-image {
+  position: relative;
+  height: 100%;
+  /* width: 400px; */
+  margin: auto;
+  width: 90%;
+
+
+}
+
+.uecard-image img {
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.uecard-level {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.more{
+  width: 100%;
+  height: auto;
+}
+
+
+.uecard-content {
+  width: 40%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.uecard-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+}
+
+.uecard-description {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.uecard-button {
+  align-self: center;
+  padding: 10px 20px;
+  background-color: #ed4fff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.uecard-button:hover {
+  background-color: #d23add;
+}
+
+.section-title{
+  font-size: 40px;
+  text-align: center;
+  margin-top: 60px;
+  color: #ffffff;
+  text-shadow: 3px 3px #8b19b4;
+  font-family: Lato, sans-serif;
+}
+

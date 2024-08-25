@@ -1,0 +1,263 @@
+/* Saving the removed css here incase we need to fetch it easily later on in the project
+will delete after complete integration of pages  */
+
+/* hero section */
+  
+/*   
+  #background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+  }
+  
+  .bg-image {
+    background-image: url('bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(30%); 
+  }
+  
+  .hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background-color: rgba(13, 13, 13, 0.7); 
+    text-align: center;
+  }
+  
+  .hero-container .text {
+    font-size: 6rem;
+    font-weight: 600;
+    text-shadow: 6px 2px 2px rgb(230, 227, 244);
+    color: rgb(255, 255, 255); 
+    margin: 0;
+    padding: 0;
+    user-select: none;
+  }
+  
+  @media (max-width: 935px) {
+    .hero-container .text {
+      font-size: 5rem;
+    }
+  }
+  
+  @media (max-width: 639px) {
+    .hero-container .text {
+      font-size: 3.5rem;
+    }
+  }
+  
+  .text h1 {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .hero-container .text span {
+    font-family: "Raleway", sans-serif;
+    color: var(--light-blue);
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .text span::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 4px;
+    bottom: -5px; 
+    left: 50%;
+    background-color: var(--black-color);
+    border-radius: 10px;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  }
+  
+  .text span:hover::after{
+    width: 100%;
+    left: 0;
+  } */
+  
+/* Typing effect */
+.typing-effect {
+  border-right: 2px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 3s steps(22) forwards, blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0; }
+  to { width: 16em; } /* Adjust the width to fit your text */
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: white; }
+}
+/* Centered content */
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 2.5em;
+}
+
+
+
+
+/* #faqs{
+    max-width: 70%;
+    margin: 40px auto 80px auto;
+}
+.accordion {
+    background-color: #751598;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 25px;
+    transition: 0.4s;
+    font-family: Lato, sans-serif;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #8b19b4;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #ffffff;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 1px 18px;
+    background-color: rgb(190, 99, 223);
+    font-size: 20px;
+    color: black;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  } */
+
+
+/* .uecard-unit-name {
+  font-size: 26px;
+  color: black;
+  font-weight: 900;
+  margin: 100px auto 5px auto;
+  /* margin-bottom: 5px; */
+/* }  */
+
+/* .uecard-unit-description {
+  padding: 20px;
+  margin-bottom: 10px;  
+  color: black;
+} */
+
+/* .uecard-unit-stats {
+  color: white;
+  font-weight: 700;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.uecard-unit-stats--event1 {
+  background: #EC9B3B;
+}
+
+.uecard-unit-stats--event2 {
+  background: #EE5487;
+}
+
+.uecard-unit-stats--event3 {
+  background: #F6901A;
+}
+
+.uecard-unit-stats--goblin {
+  background: #82BB30;
+}
+
+.uecard-unit-stats--wizard {
+  background: #4FACFF;
+} */
+
+/* .uecard-unit-stats .more {
+  width: 50%;
+  float: left;
+  padding: 20px 15px;
+}
+
+.uecard-unit-stats .more {
+  border-right: 1px solid #BD7C2F;
+}
+
+.uecard-unit-stats .more.no-border {
+  border-right: none;
+} */
+
+/* .clearfix::after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.slick-prev {
+  left: 100px;
+  z-index: 999;
+}
+
+.slick-next {
+  right: 100px;
+  z-index: 999;
+}*/
+
+/*
+.more--event1{
+    background: #F6901A;
+}
+
+.more--event1 button{
+    justify-content: center;
+    margin: 20px;
+    background-color: #a95d05;
+    color: white;
+    border: white 2px solid;
+    border-radius: 20px;
+    padding: 20px 40px 20px 40px;
+} */
+
+/* .uecard {
+  display: flex;
+  background: white;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+} */
+
+/* .uecard-image {
+  width: 90%;
+} */
+

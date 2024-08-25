@@ -1,0 +1,202 @@
+:root {
+  --navbar-bg-color: #ff9900;
+  --navbar-text-color: #fff;
+  --navbar-text-hover-color: #232f3e;
+}
+
+/* Nav Bar style (Payal) */
+
+.navbar {
+  background-color: rgba(117, 117, 117, 0.7); 
+  font-size: 1.2rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: relative; 
+  z-index: 1;
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+.navbar .nav-left {
+  text-align: center;
+  margin-top: 0.3rem;
+}
+
+.nav-left h3 {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+.navbar .nav-right {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.navbar a {
+  color: rgb(240, 240, 240);
+  text-shadow: 0.5px 0.5px 0.5px rgb(7, 0, 34);
+  text-align: center;
+  padding: 14px 16px;
+  padding-bottom: 0px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a {
+  position: relative;
+}
+
+.navbar a:hover {
+  color: white;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -7px; 
+  margin-left: 15%;
+  width: 70%;
+  height: 2px;
+  background-color: rgb(38 35 42);
+  border-radius: 10px;
+  transform-origin: bottom left;
+  transform: scaleX(0); 
+  transition: transform 0.4s ease-in-out; 
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1); 
+}
+
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar .nav-right {
+    flex-direction: row;
+    padding: 5px 50px;
+  }
+  .navbar a {
+    font-size: small;
+    padding: 4px 6px;
+    text-decoration: none;
+  }
+}
+
+/* Nav style end */
+
+
+/* Footer style- Pulak Srivastava */
+footer {
+  padding-top: 10px;
+  margin:0;
+  box-sizing: border-box;
+  /* background: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
+  background: linear-gradient(to right, #9796f0, #fbc7d4) ;
+  
+}
+
+/*
+links
+twitter - https://twitter.com/AWSClubIGDTUW
+linkedin - https://www.linkedin.com/company/aws-cloud-club-igdtuw/
+youtube - http://www.youtube.com/@AWSClubIGDTUW
+meetup - https://www.meetup.com/aws-cloud-club-igdtuw/
+instagram - https://www.instagram.com/awscloudclubigdtuw/
+mail - awsclubigdtuw@gmail.com
+
+*/
+
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  background: linear-gradient(to right, #9796f0, #fbc7d4) ;
+}
+
+.icon {
+  text-decoration: none;
+  padding: 10px;
+  color: whitesmoke;
+  margin: 10px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  outline: none;
+}
+
+.icon:hover {
+  border: 3px solid white;
+  color: #9796f0;
+  transition: 0.5s;
+}
+
+.icon i {
+  font-size: 1.6em;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+
+.footer {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.email {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: white;
+  background: transparent;
+  display: inline;
+}
+
+.email a{
+  text-decoration: none;
+  color: white;
+}
+.email a:hover {
+  color: #7877c5;
+}
+
+.copyright {
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  line-height: 15px;
+  
+}
+
+@media (max-width: 768px) {
+  .icons {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+}
+
+.icon {
+  margin: 5px;
+}
+
+.icon i {
+  font-size: 1.2em;
+}
+
+.email h4 {
+  font-size: 14px;
+}
+
+.copyright h5 {
+  font-size: 12px;
+}
+/*Footer style ends*/

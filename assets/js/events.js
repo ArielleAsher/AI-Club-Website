@@ -65,7 +65,7 @@ for (i = 0; i < acc.length; i++) {
 
 $('.navTrigger').click(function () {
   $(this).toggleClass('active');
-  console.log("Clicked menu");
+  // console.log("Clicked menu");
   $("#mainListDiv").toggleClass("show_list");
   $("#mainListDiv").fadeIn();
 
@@ -74,7 +74,7 @@ $('.navTrigger').click(function () {
 $(window).scroll(function() {
   if ($(document).scrollTop() > 50) {
       $('.nav').addClass('affix');
-      console.log("OK");
+      // console.log("OK");
   } else {
       $('.nav').removeClass('affix');
   }
