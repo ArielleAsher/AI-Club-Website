@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #4aa4c5;
+    background-image: url("images/newestBgLight.png");
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.orbit-container {
+    position: relative;
+    width: 50%;
+    height: 500px;
+}
+
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px; /* Adjusted for tag size */
+    height: 50px; /* Adjusted for tag size */
+    margin-top: -25px; /* Adjusted for centering the tags */
+    margin-left: -25px; /* Adjusted for centering the tags */
+    
+}
+
+#orbit1 { animation: orbit 10s linear infinite; }
+#orbit2 { animation: orbit 15s linear infinite; }
+#orbit3 { animation: orbit 20s linear infinite; }
+
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg) translateX(200px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(200px) rotate(-360deg);
+    }
+}
+
+.or {
+    position: relative;
+    top: 50%; /* Adjusted to center vertically */
+    left: 50%; /* Adjusted to center horizontally */
+    width: 350px;
+    height: 340px;
+    margin: -170px 0 0 -175px; /* Adjusted for centering */
+    border-radius: 50%;
+    /* border: 1px dashed #ddd; */
+    overflow: hidden; /* To prevent content from spilling out */
+}
+
+.center-image {
+    size: 500px;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+}
+
+.right-panel {
+    width: 60%;
+    padding: 50px;
+}
+
+.ai-club-box {
+    left: 20%;
+    background-color: #282c34;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ai-club-box h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #61dafb;
+}
+
+.ai-club-box p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#join-us-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#join-us-button:hover {
+    background-color: #21a1f1;
+}
+
+.ai-club-box:hover {
+    transform: scale(1.05);
+}
