@@ -1,15 +1,22 @@
-html{
+body{
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(135deg, #0F2027, #203A43, #2C5364); 
+  /* background: linear-gradient(135deg, #0F2027, #203A43, #2C5364);  */
+  background-image: url(/assets/images/bg/newestBgLight.png);
+  background: #131415;
+  background-position: center;
+  /* padding: 2rem 0; */
+  background-repeat: no-repeat;
 }
-
+.contact-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.1rem 0;
+}
 .contact-container {
   background-color: rgba(32, 34, 37, 0.9); 
   padding: 15px;
@@ -82,25 +89,3 @@ body {
 .contact-form button:hover {
   background-color: #3700B3; 
 }
-
-.footer {
-  margin-top: 15px;
-}
-
-.social-icons a {
-  margin: 0 8px;
-  color: #BB86FC; 
-  font-size: 22px;
-}
-
-.social-icons a:hover {
-  color: #3700B3; 
-}
-
-.form-intro {
-font-size: 1.1em;
-margin-bottom: 15px;
-text-align: center;
-color: #b7acac;
-}
-

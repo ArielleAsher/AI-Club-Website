@@ -1,15 +1,18 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+.about-us-rotate{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #4aa4c5;
-    background-image: url("images/bg/newestBgLight.png");
+    background-image: url("/assets/images/bg/gameplayBg.png");
+    background-color: #0b0a0a;
+    background-position:0%;
+    background-repeat: no-repeat;
+    padding: 2rem 0;
 }
-
 .container {
     display: flex;
     width: 100%;

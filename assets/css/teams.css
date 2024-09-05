@@ -1,0 +1,237 @@
+
+body {
+    top: 0;
+    left: 0;
+    margin: 0;
+    background-color: black;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* Background image */
+.the-background-div {
+    background: url(./images/newestBgLight.png);
+    background-position: center;
+    padding: 2rem 0;
+    background-repeat: no-repeat;
+}
+
+/* "Meet our team" text styling */
+.teams-main-text {
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    background: linear-gradient(90.23deg, #000000 , rgb(6, 6, 6), #9eccff, #98faff, rgb(0, 0, 0), black );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(33, 31, 66, 0.2);
+    margin-bottom: 0.3vw;
+}
+
+/* "2024-25" text styling */
+.teams-other-text {
+    color: white;
+    margin-bottom: 3vw;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Main cards container */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+
+/* Each team member card */
+.team-member {
+    position: relative;
+    transition: 0.7s ease;
+    background-color: pink;
+    border-radius: 20px;
+    height: 40vh;
+    width: 24vw; /* Default width, adjusted for different layouts */
+    display: block;
+    text-align: center;
+}
+.expanded-member{
+    display: none;
+    transition: 0.7s ease;
+}
+
+.team-member.expand .normal-member{
+    display: none;
+}
+.team-member.expand .expanded-member{
+    display: block;
+}
+
+/* Normal view */
+.normal-member img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.normal-member .layer{
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 20px 20px;
+    background-color: rgb(0,0,0,0.9);
+    width: 100%;
+    height: 30%;
+}
+.normal-member .member-name{
+    display: block;
+    margin-top: 1rem;
+    color: white ;
+    font-size: 1.4rem;
+    z-index: 20;
+}
+.normal-member .member-pos{
+    display: block;
+    color: white ;
+    font-size: 1rem;
+    z-index: 20;
+}
+
+/* Expanded styles */
+.expanded-member img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 0 20px 20px 0;
+    /* overflow: hidden; */
+}
+.expanded-member .layer{
+    position: absolute;
+    left: 0;
+    border-radius: 20px 0 0 20px;
+    background-color: rgb(0,0,0,0.7);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.expanded-member .member-name{
+    animation: slideinfromleft 0.4s;
+    font-size: 2rem;
+    color: white;
+    /* margin-top: 4rem; */
+}
+.expanded-member .member-pos{
+    animation: slideinfromleft 0.4s;
+    font-size: 1.2rem;
+    color: white;
+    z-index: 10000;
+}
+/* .expanded-member .member-content{
+    font-size: 1rem;
+    padding: 2rem;
+    color: white;
+} */
+.expanded-member .icons i{
+    /* position: absolute; */
+    /* bottom: 20%; */
+    font-size: 1.7rem;
+    color: rgb(212, 215, 215);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+.expanded-member .icons i:hover{
+    color: rgb(252, 252, 252);
+    transform: scale(1.04);
+    cursor: pointer;
+}
+/* Custom sizes for different layouts */
+#for-one .team-member {
+    width: 23vw;
+}
+#for-one .expand {
+    width: 30vw;
+}
+#for-two .team-member {
+    width: 25vw;
+}
+
+
+#for-two .expand {
+    width: 28vw;
+}
+#for-two .shrink {
+    width: 22vw;
+}
+
+
+#for-three .team-member {
+    width: 24vw;
+}
+#for-three .expand {
+    width: 29vw;
+}
+#for-three .shrink {
+    width: 21.5vw;
+}
+
+
+#for-four .team-member {
+    width: 23vw;
+}
+
+
+/* Expanded and shrunk states: add image show hide vgera styles here*/
+.expand {
+    background-color: rgba(21, 42, 109, 0.272);
+}
+.shrink {
+    background-color: rgba(137, 43, 226, 0.226);
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 1100px) {
+    .team-member .normal-member{
+        display: none;
+    }
+    .team-container {
+        flex-direction: column;
+        width: fit-content;
+        gap: 2vh;
+    }
+    #for-one .team-member,
+    #for-two .team-member,
+    #for-three .team-member,
+    #for-four .team-member {
+        width: 80vw;
+    }
+
+    .team-member{
+        background-color: rgba(21, 42, 109, 0.272);
+    }
+    .team-member .expanded-member{
+        display: block;
+    }
+
+}
+@keyframes slideinfromleft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }  
+}

@@ -8,9 +8,8 @@
 }
 
 body{
-  /* background: linear-gradient(to bottom, rgb(179, 83, 177) 0%, rgba(175,135,124,1) 65%, rgba(175,135,124,1) 100%) fixed; */
-  background-color: black;
-  font-family: Lato, sans-serif;
+  background-color: #0b0a0a;
+  font-family: "Poppins", sans-serif;
 }
 .the-background-div{
   width: 100%;

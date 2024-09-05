@@ -1,21 +1,23 @@
-body {
+.faculty {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
     display: flex;
+    height: max-content;
     justify-content: center;
+    background-image: url(/assets/images/bg/newestBgLight.png);
+    object-fit:cover ;
+    background-color: #0b0a0a;
+    }
+    
+.testimonial-section {   
+    margin-top: 5rem; 
+    margin-bottom: 5rem;
     align-items: center;
-    height: 100vh;
-    background-image: url(images/newestBgLight.png);
-    background-color: #000000;
-}
-
-.testimonial-section {
     text-align: center;
-    padding: 20px;
-    background-color: #52eee1;
+    padding: 3rem;
+    background-color: #d1d2e3;
     width: 80%;
+    height: max-content;
     max-width: 900px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -55,13 +57,13 @@ body {
     text-align: left;
     position: relative;
     padding-left: 20px;
-    border-left: 3px solid #00c1ff;
+    border-left: 3px solid #6440af;
     max-width: 60%;
 }
 
 .quote-mark {
     font-size: 40px;
-    color: #00c1ff;
+    color: #6440af;
     position: absolute;
     top: -10px;
     left: -25px;
@@ -106,17 +108,34 @@ body {
 .pagination-dot {
     width: 10px;
     height: 10px;
-    background-color: #ddd;
+    background-color: #1f1e26;
     border-radius: 50%;
     margin: 0 5px;
     cursor: pointer;
 }
 
 .pagination-dot.active {
-    background-color: #00c1ff;
+    background-color: #6440af;
 }
 
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+@media screen and (max-width: 600px) {
+    .testimonial-content{
+        display: none;
+    }   
+    .testimonial-section {         
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .testimonial-subtitle{}
+}
+
+@media screen and (max-width: 450px) {
+    .testimonial-subtitle{
+        display: none;
+    }
 }
