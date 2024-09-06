@@ -7,21 +7,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+    width: 100vw;
     background-image: url("/assets/images/bg/gameplayBg.png");
     background-color: #0b0a0a;
-    background-position:0%;
+    background-position:0%; 
     background-repeat: no-repeat;
     padding: 2rem 0;
 }
 .container {
     display: flex;
     width: 100%;
-    max-width: 1200px;
 }
 
 .orbit-container {
     position: relative;
-    width: 50%;
+    width: 50vw;
     height: 500px;
 }
 
@@ -70,13 +71,14 @@ body {
     width: 300px;
 }
 
-.right-panel {
+/* .right-panel {
     width: 60%;
     padding: 50px;
-}
+} */
 
 .ai-club-box {
-    left: 20%;
+    display: block;
+    /* left: 20%; */
     background-color: #282c34;
     color: #ffffff;
     padding: 20px;
@@ -115,7 +117,12 @@ body {
 #join-us-button:hover {
     background-color: #21a1f1;
 }
-
 .ai-club-box:hover {
     transform: scale(1.05);
+}
+
+@media screen and (max-width:1000px){
+    .about-us-rotate{
+        flex-direction: column;
+    }
 }
