@@ -4,30 +4,39 @@
   --navbar-text-hover-color: #232f3e;
 }
 
-/* Nav Bar style (Payal) */
-
+/* Nav Bar */
 .navbar {
-  background-color: rgb(126, 123, 130); 
-  font-size: 1.2rem;
+  background-color: rgba(1, 13, 36, 0.868); 
+  background-image: url(/assets/images/bg/contactBackground.png);
+  font-size: 1.5rem;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 10px 80px 10px 140px;
   position: relative; 
   z-index: 1;
   width: 100%;
   box-sizing: border-box; 
 }
 
-.navbar .nav-left {
-  text-align: center;
-  margin-top: 0.3rem;
+.nav-left{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 3rem;
+  color: white;
+  padding: 10px;
 }
 
-.nav-left h3 {
+.nav-left img{
+  margin: 2rem;
+}
+
+.nav-middle{
+  margin-left: 10px;
+  font-size: 3rem;
   color: white;
-  text-shadow: 1px 1px 1px black;
 }
 
 .navbar .nav-right {
@@ -64,7 +73,7 @@
   margin-left: 15%;
   width: 70%;
   height: 2px;
-  background-color: rgb(38 35 42);
+  background-color: white/*rgb(38 35 42)*/;
   border-radius: 10px;
   transform-origin: bottom left;
   transform: scaleX(0); 
@@ -91,113 +100,82 @@
   }
 }
 
-/* Nav style end */
 
-
-/* Footer style- Pulak Srivastava */
-footer {
-  padding-top: 2rem;
-  margin:0;
-  box-sizing: border-box;
-  background: #222325;
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(1, 13, 36, 0.868)/*#213967*/;
   background-image: url(/assets/images/bg/contactBackground.png);
-  
+  padding: 50px 200px 50px 200px;
+  color: white;
+  height: 120px;
 }
 
-/*
-links
-twitter - https://twitter.com/AWSClubIGDTUW
-linkedin - https://www.linkedin.com/company/aws-cloud-club-igdtuw/
-youtube - http://www.youtube.com/@AWSClubIGDTUW
-meetup - https://www.meetup.com/aws-cloud-club-igdtuw/
-instagram - https://www.instagram.com/awscloudclubigdtuw/
-mail - awsclubigdtuw@gmail.com
+.footer-left {
+  display: flex;
+  align-items: center;
+}
 
-*/
+.club-logo {
+  width: 100px;
+  margin-right: 20px;
+}
 
-.icons {
+.club-info h3 {
+  font-size: 32px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.club-info p {
+  font-size: 16px;
+  color: white;
+}
+
+.footer-right {
+  text-align: center;
+  background-color: #28416fae;
+  padding: 10px 30px 10px 30px;
+  border-radius: 20px;
+}
+
+.footer-right p {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.social-icons {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
-  transition: 0.6s;
+  gap: 50px;
+  margin: 0px 20px 0px 20px;
 }
 
-.icon {
-  text-decoration: none;
-  padding: 10px;
-  color: whitesmoke;
-  margin: 10px;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  outline: none;
+.social-icon {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.icons i:hover {
-  /* border: 3px solid white; */
-  color: #afa7e3;
-}
-
-.icon i {
-  font-size: 1.6em;
-  color: white;
-  margin: 0;
-  padding: 0;
-}
-
-
-.footer {
-  width: 100%;
-  padding: 70px 30px 20px;
-}
-
-.email {
-  text-align: center;
-  padding: 1rem;
-  color: white;
-  background: transparent;
-  transition: 0.5s ;
-  display: inline;
-}
-
-.email a{
-  text-decoration: none;
-  padding: 1rem;
-  color: white;
-}
-.email a:hover {
-  color: #7877c5;
-}
-
-.copyright {
-  color: white;
-  padding: 1rem;
-  text-align: center;
-  padding-top: 5px;
-  padding-bottom: 20px;
-  line-height: 15px;
-  
+.social-link:hover .social-icon {
+  transform: scale(1.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 768px) {
-  .icons {
-      flex-wrap: wrap;
-      justify-content: center;
+  .footer {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-left, .footer-right {
+      margin-bottom: 20px;
+  }
+
+  .footer-left {
+      flex-direction: column;
   }
 }
-
-.icon {
-  margin: 5px;
-}
-
-.icon i {
-  font-size: 1.2em;
-}
-
-.email h4 {
-  font-size: 14px;
-}
-
-.copyright h5 {
-  font-size: 12px;
-}
-/*Footer style ends*/
