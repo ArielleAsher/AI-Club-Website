@@ -11,17 +11,19 @@ body {
   /* padding: 2rem 0; */
   background-repeat: no-repeat;
 }
+
 .contact-main{
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2.1rem 0;
 }
+
 .contact-container {
   background-color: rgba(32, 34, 37, 0.9); 
   padding: 15px;
   border-radius: 15px;
-  width: 100%;
+  width: 80vw;
   max-width: 600px;
   text-align: center;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); 
@@ -62,9 +64,15 @@ body {
   border-radius: 8px;
   border: 1px solid #BB86FC; 
   font-size: 0.95em;
-  color: #BB86FC;
+  font-family: "Poppins", sans-serif;
+  color: #deeae8; 
   background-color: #121212; 
   box-sizing: border-box;
+  outline: none;
+}
+
+.contact-form textarea {
+  height: 7rem;
 }
 
 .contact-form input::placeholder,
@@ -87,5 +95,5 @@ body {
 }
 
 .contact-form button:hover {
-  background-color: #3700B3; 
+  background-color:  #8a33f4; 
 }

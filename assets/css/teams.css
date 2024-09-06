@@ -9,7 +9,7 @@ body {
 
 /* Background image */
 .the-background-div {
-    background: url(./images/newestBgLight.png);
+    background: url(/assets/images/bg/newestBgLight.png);
     background-position: center;
     padding: 2rem 0;
     background-repeat: no-repeat;
@@ -51,7 +51,7 @@ body {
 .team-member {
     position: relative;
     transition: 0.7s ease;
-    background-color: pink;
+    background-color: rgba(238, 106, 128, 0.785);
     border-radius: 20px;
     height: 40vh;
     width: 24vw; /* Default width, adjusted for different layouts */
@@ -194,10 +194,10 @@ body {
 
 /* Expanded and shrunk states: add image show hide vgera styles here*/
 .expand {
-    background-color: rgba(21, 42, 109, 0.272);
+    background-color: rgba(21, 42, 109, 0.672);
 }
 .shrink {
-    background-color: rgba(137, 43, 226, 0.226);
+    background-color: rgba(137, 43, 226, 0.626);
 }
 
 /* Responsive adjustments */
@@ -227,7 +227,7 @@ body {
 }
 @keyframes slideinfromleft {
     0% {
-        transform: translateX(-100%);
+        transform: translateX(-10%);
         opacity: 0;
       }
       100% {
