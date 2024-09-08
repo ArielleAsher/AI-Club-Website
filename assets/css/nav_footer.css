@@ -14,6 +14,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 80px 10px 140px;
+
   position: relative; 
   z-index: 1;
   width: 100%;
@@ -24,13 +25,15 @@
   display: flex;
   align-items: center;
   justify-content: left;
-  font-size: 3rem;
+  font-size: 2.7rem;
   color: white;
   padding: 10px;
 }
 
 .nav-left img{
-  margin: 2rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 20px;
 }
 
 .nav-middle{
@@ -91,11 +94,23 @@
   }
   .navbar .nav-right {
     flex-direction: row;
-    padding: 5px 50px;
+    padding: 5px 0px;
+    letter-spacing: .2rem;
+    line-height: normal;
+  }
+  .navbar .nav-left{
+    flex-direction: row;
+    text-align: center;
+    letter-spacing: .1rem;
+    line-height: 45px;
+  }
+  .navbar .nav-left img{
+    margin-right: auto;
+    margin-right: 20px;
   }
   .navbar a {
     font-size: small;
-    padding: 4px 6px;
+    padding: 15px 15px 5px;
     text-decoration: none;
   }
 }
@@ -110,7 +125,7 @@
   background-image: url(/assets/images/bg/contactBackground.png);
   padding: 50px 200px 50px 200px;
   color: white;
-  height: 120px;
+  height: 80px;
 }
 
 .footer-left {
