@@ -8,6 +8,7 @@
     <link rel="icon" href="../assets/images/logo/logo.jpeg">
     <link rel="stylesheet" href="/assets/css/nav_footer.css">
     <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="script" href="./assets/js/nav.js"/>
     <!--footer icon link-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>   
@@ -21,6 +22,9 @@
           height="98"
         />
         AI Club IGDTUW
+        <button class="btn" onclick="nav_toggle()">
+            <img class="ham-btn" src="../assets\images\logo\hamburger_button_blue.png" height="75px" width="70px">
+        </button>
       </div>
       <div class="nav-right">
         <a href="../index.html">Home</a>
@@ -28,6 +32,14 @@
         <a href="./events.html">Events</a>
         <a href="./team.html">Our Team</a>
         <a href="./contact.html">Contact us</a>
+      </div>
+      <div id="t1" class="hamburger">
+        <span class="bar"><a href="/index.html">Home</a></span>
+        <span class="bar"><a href="../pages/about.html">About  Us</a></span>
+        <span class="bar"><a href="../pages/events.html">Events</a></span>
+        <span class="bar"><a href="../pages/team.html">Our Team</a></span>
+        <span class="bar"><a href="../pages/contact.html">Contact us</a></span>
+        <span class="bar" onclick="closeMenu()"><a class="a1" style="color: brown;">CLOSE</a></span>
       </div>
     </div>
     <!-- Nav Bar end -->
@@ -85,7 +97,7 @@
     </div>
   </footer>
   <!--Footer ends-->
-
-    <script src="assets\js\about.js"></script>
+    <script src="../assets/js/nav.js"></script>
+    <script src="../assets\js\about.js"></script>
 </body>
 </html>
