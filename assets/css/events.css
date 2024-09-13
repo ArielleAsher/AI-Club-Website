@@ -32,6 +32,8 @@ body{
   -webkit-font-smoothing: antialiased;
 }
 
+
+
 .title {
   /* font-family: "Raleway"; */
   font-size: 24px;
@@ -92,6 +94,21 @@ body{
   background-color: rgba(138, 24, 169, 0.756);
   line-height: 1.2;
   text-align: center;
+}
+
+.pecard-info-quiz {
+  margin: auto;
+  padding: 20px;
+  position: absolute;
+  bottom: 1;
+  left:1;
+  color: #fff;
+  transform: translateY(40%);
+  transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-color: rgba(138, 24, 169, 0.756);
+  line-height: 1.2;
+  text-align: center;
+  width:100%;
 }
 
 .pecard-info p {
@@ -330,3 +347,22 @@ body {
   font-family: Lato, sans-serif;
 }
 
+
+@media screen and (max-width:1000px){
+  
+.pecard-info-quiz {
+  margin: auto;
+  padding: 20px;
+  position: absolute;
+  bottom: 1;
+  left:1;
+  color: #fff;
+  transform: translateY(40%);
+  transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-color: rgba(138, 24, 169, 0.756);
+  line-height: 1.2;
+  text-align: center;
+  width:100%;
+  text-wrap:balance;
+}
+}
