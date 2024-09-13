@@ -36,14 +36,21 @@
     height: 40vh;
     display: block;
 }
-
-.carousel-item.expand {
-    width: 31.2vw; 
-    background-color: rgba(21, 42, 109, 0.672);
+.carousel-item.expand .expanded-member{
+    display: block;
 }
 
+.carousel-item.expand .normal-member{
+    display: none;
+}
+.carousel-item.expand {
+    /* width: 31.2vw;  */
+    background-color: rgba(21, 42, 109, 0.672);
+    width: 29vw;
+}
 .carousel-item.shrink {
-    width: 20.4vw; 
+    width: 21.5vw;
+    /* width: 20.4vw;  */
     background-color: rgba(137, 43, 226, 0.626);
 }
 
@@ -66,6 +73,8 @@ button.prev {
 button.next {
     right: 6vw; /* Position to the right */
 }
+
+
 
 
 /* Responsive adjustments */
