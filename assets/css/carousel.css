@@ -25,7 +25,17 @@
     width: inherit;
     flex-direction: row;
 }
-.carousel-item {
+
+.carousel-item{
+    position: relative;
+    transition: 0.7s ease;
+    background-color: rgba(238, 106, 128, 0.785);
+    border-radius: 20px;
+    height: 40vh;
+    width: 24vw; /* Default width, adjusted for different layouts */
+    display: block;
+    text-align: center;
+
     width: 24vw; 
     margin-right: 1vw;
     box-sizing: border-box;
@@ -97,6 +107,7 @@ button.next {
     }
     .carousel-container {
         overflow:auto;
+        width: 100%;
         gap: 1rem; 
     }
     .carousel {
