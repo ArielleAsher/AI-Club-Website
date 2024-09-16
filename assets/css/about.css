@@ -9,7 +9,7 @@ body {
     align-items: center;
     flex-direction: row;
     width: 100vw;
-    background-image: url("/assets/images/bg/gameplayBg.png");
+    /* background-image: url("/assets/images/bg/gameplayBg.png"); */
     background-color: #0b0a0a;
     background-position:0%; 
     background-repeat: no-repeat;

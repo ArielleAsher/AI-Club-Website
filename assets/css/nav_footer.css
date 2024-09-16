@@ -1,8 +1,13 @@
+.{
+  background-color: blue;
+}
+
 :root {
   --navbar-bg-color: #ff9900;
   --navbar-text-color: #fff;
   --navbar-text-hover-color: #232f3e;
 }
+
 
 /* Nav Bar */
 .navbar {
@@ -19,6 +24,28 @@
   z-index: 1;
   width: 100%;
   box-sizing: border-box; 
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Ensure spacing between logo and text */
+}
+
+.nav-left img {
+  height: 98px;
+  filter: grayscale(50%);
+}
+
+.nav-left h1 {
+  font-size: 2rem;
+  margin-left: 10px; /* Ensure consistent spacing */
+}
+
+.nav-right a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #fff;
 }
 
 .nav-left{
@@ -60,6 +87,7 @@
   text-decoration: none;
   font-weight: bold;
 }
+
 
 .navbar a {
   position: relative;
@@ -194,7 +222,7 @@
   background-color: rgba(1, 13, 36, 0.868)/*#213967*/;
   background-image: url(/assets/images/bg/contactBackground.png);
   padding: 50px 200px 50px 200px;
-  color: white;
+  color: rgb(0, 44, 116);
   height: 80px;
 }
 

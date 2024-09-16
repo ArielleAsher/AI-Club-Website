@@ -5,8 +5,8 @@ body{
 }
 body {
   /* background: linear-gradient(135deg, #0F2027, #203A43, #2C5364);  */
-  background-image: url(/assets/images/bg/newestBgLight.png);
-  background: #131415;
+  /* background-image: url(/assets/images/bg/newestBgLight.png); */
+  background: #000000;
   background-position: center;
   /* padding: 2rem 0; */
   background-repeat: no-repeat;

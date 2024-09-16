@@ -9,7 +9,7 @@ body {
 
 /* Background image */
 .the-background-div {
-    background: url(/assets/images/bg/newestBgLight.png);
+    /* background: url(/assets/images/bg/newestBgLight.png); */
     background-position: center;
     padding: 2rem 0;
     background-repeat: no-repeat;
