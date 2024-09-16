@@ -418,16 +418,6 @@ body {
     margin-bottom: 0px;
   }
   
-  .uecard-image {
-    position: relative;
-    height: 90%;
-    /* width: 400px; */
-    margin: auto;
-    width:fit-content;
-    flex-direction: row;
-    flex-basis: 90%;
-  }
-  
   .uecard-title {
     font-size: 30px;
     font-weight: 700;
@@ -436,15 +426,24 @@ body {
     text-align: center;
   }
   
+  
+  .uecard-image {
+    position: relative;
+    height: 90%;
+    /* width: 400px; */
+    margin: auto;
+    width: 90%;
+  }
+  
   .uecard-image img {
     position: absolute;
     margin: auto;
-    margin-top: 50px;
+    margin-left: 50px;
     width: 80%;
     height: 100%;
     object-fit: cover;
   }
-  
+
   .uecard-image-1 img {
     position: absolute;
     margin: auto;
