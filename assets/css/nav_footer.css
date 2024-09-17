@@ -18,7 +18,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 80px 10px 140px;
+  padding: 10px 10px 10px 10px;
 
   position: relative; 
   z-index: 1;
@@ -124,12 +124,15 @@
 }
 
 .btn{
-  background-color:rgba(6, 21, 21, 0);
+  background-color:rgba(204, 223, 223, 0);
   border:none;
   margin-left: 50px;
   display:none;
 }
-
+.fa-bars{
+  color: white;
+  font-size: 3rem ;
+}
 .hamburger{
   display:none;
 }
