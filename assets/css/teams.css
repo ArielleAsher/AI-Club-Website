@@ -21,9 +21,9 @@ body {
     color: white;
     text-align: center;
     font-size: 2.3rem;
-    background: linear-gradient(90.23deg, #000000 , rgb(6, 6, 6), #9eccff, #98faff, rgb(0, 0, 0), black );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* background: linear-gradient(90.23deg, #000000 , rgb(6, 6, 6), #9eccff, #98faff, rgb(0, 0, 0), black ); */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
     text-shadow: 2px 2px 4px rgba(33, 31, 66, 0.2);
     margin-bottom: 0.3vw;
 }
@@ -53,7 +53,7 @@ body {
     transition: 0.7s ease;
     background-color: rgba(12, 8, 50, 0.785);
     border-radius: 20px;
-    height: 47vh;
+    height: 43vh;
     width: 27vw; /* Default width, adjusted for different layouts */
     display: block;
     text-align: center;
