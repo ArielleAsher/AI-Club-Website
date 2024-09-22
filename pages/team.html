@@ -10,27 +10,36 @@
     <!-- Font Awesome Free CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <title>Document</title>
+    <title>Team - AI Club IGDTUW</title>
 </head>
 <body>
     <!-- Nav Bar  -->
     <div class="navbar sidebarMenu" id="navbar">
-      <div class="nav-left">
-        <img
-          src="../assets/images/logo/logo_white.png"
-          style="filter: grayscale(50%)"
-          height="125"
-        />
-        AI Club
+        <div class="nav-left">
+          <img
+            src="../assets/images/logo/logo_white.png"
+          />
+          AI Club IGDTUW
+          <button class="btn" onclick="nav_toggle()">
+              <img class="ham-btn" src="../assets\images\logo\ham_btn_test_final.png">
+          </button>
+        </div>
+        <div class="nav-right">
+          <a href="../index.html">Home</a>
+          <a href="./about.html">About Us</a>
+          <a href="./events.html">Events</a>
+          <a href="./team.html">Our Team</a>
+          <a href="./contact.html">Contact us</a>
+        </div>
+        <div id="t1" class="hamburger">
+          <span class="bar"><a href="/index.html">Home</a></span>
+          <span class="bar"><a href="../pages/about.html">About  Us</a></span>
+          <span class="bar"><a href="../pages/events.html">Events</a></span>
+          <span class="bar"><a href="../pages/team.html">Our Team</a></span>
+          <span class="bar"><a href="../pages/contact.html">Contact us</a></span>
+          <span class="bar" onclick="closeMenu()"><a class="a1" style="color: brown;">CLOSE</a></span>
+        </div>
       </div>
-      <div class="nav-right">
-        <a href="../index.html">Home</a>
-        <a href="./about.html">About Us</a>
-        <a href="./events.html">Events</a>
-        <a href="./team.html">Our Team</a>
-        <a href="./contact.html">Contact us</a>
-      </div>
-    </div>
     <!-- Nav Bar end -->
 
     <div class="team-section-full">
@@ -230,7 +239,7 @@
                                         <div class="normal-member">
                                             <img src="/assets/images/teams/tech/Tech_HC_Shriya.jpg" alt="">
                                             <div class="layer">
-                                                <div class="member-name">Shriya Sandhliya</div>
+                                                <div class="member-name">Shriya Sandilya</div>
                                                 <div class="member-pos">Head Coordinator</div>
                                             </div>
                                         </div>
@@ -238,7 +247,7 @@
                                         <div class="expanded-member">
                                             <img src="/assets/images/teams/tech/Tech_HC_Shriya.jpg" alt="">
                                             <div class="layer">
-                                                <div class="member-name">Shriya Sandhliya</div>
+                                                <div class="member-name">Shriya Sandilya</div>
                                                 <div class="member-pos">Head Coordinator</div>
                                                 <div class="icons">
                                                     <i class="fa-brands fa-linkedin-in"></i>

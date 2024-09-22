@@ -43,14 +43,14 @@ body{
 }
 
 .container {
-  padding: 40px 80px;
+  padding: 2rem 3rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .pecard-wrap {
-  margin: 10px;
+  margin: 0.5rem;
   perspective: 800px;
   cursor: pointer;
   flex: 1 1 500px;

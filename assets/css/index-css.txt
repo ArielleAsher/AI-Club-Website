@@ -1,0 +1,88 @@
+:root {
+  --light-blue: #94b0c9;
+  --dark-blue: #1c1678;
+  --black-color: black;
+
+  /* Background */
+  --white-color: white;
+  --off-white-color: #f2f2f2;
+  --off-blue-color: #daeaf9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  width: 100%vw;
+}
+
+body {
+  font-family: 'Baloo Bhai 2', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 0.8;
+  position: relative;
+  /* overflow-x: hidden;  */
+  /* width: 100vw; */
+}
+
+.sub-heading {
+  color: var(--white-color);
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+/* Video section(landing + main) */
+
+.video-background {
+  height: 110%;
+  /* width: 100%; */
+  z-index: -1;
+  overflow: hidden;
+}
+
+#bgVideo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* about us section */
+.about-us-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  border: none;
+  background-color: #0b0a0a;
+  text-align: center;
+  color: #d5e7f4;
+}
+
+.about-us-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .about-us-content {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 40px;
+    font-size: small;
+  }
+}
+
+.about-us-content h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.about-us-content p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-align: center;
+}
+

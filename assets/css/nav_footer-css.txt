@@ -4,50 +4,20 @@
   --navbar-text-hover-color: #232f3e;
 }
 
-
 /* Nav Bar */
 .navbar {
   background-color: rgba(1, 13, 36, 0.868); 
   background-image: url(/assets/images/bg/contactBackground.png);
-  font-size: 1rem;
+  font-size: 1.5rem;
+  /* overflow: hidden; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 10px 10px 10px;
-  /* position: relative;  */
+  padding: 1rem 2rem 1rem 1rem;
+
+  position: relative; 
   z-index: 1;
-  width: 100%;
   box-sizing: border-box; 
-}
-/* 
-.sidebarMenu{
-  display: flex;
-} */
-
-.nav-left {
-  display: flex;
-  align-items: center;
-  gap: 10px; /* Ensure spacing between logo and text */
-}
-
-/* .nav-right{
-  align-items: right;
-} */
-
-.nav-left img {
-  height: 98px;
-  filter: grayscale(50%);
-}
-
-.nav-left h1 {
-  font-size: 2rem;
-  margin-left: 10px; /* Ensure consistent spacing */
-}
-
-.nav-right a {
-  margin-right: 15px;
-  text-decoration: none;
-  color: #fff;
 }
 
 .nav-left{
@@ -56,7 +26,7 @@
   justify-content: left;
   font-size: 2.7rem;
   color: white;
-  padding: 10px;
+  padding: 0.5rem;
 }
 
 .nav-left img{
@@ -89,7 +59,6 @@
   text-decoration: none;
   font-weight: bold;
 }
-
 
 .navbar a {
   position: relative;
@@ -126,15 +95,12 @@
 }
 
 .btn{
-  background-color:rgba(204, 223, 223, 0);
+  background-color:rgba(6, 21, 21, 0);
   border:none;
   margin-left: 50px;
   display:none;
 }
-.fa-bars{
-  color: white;
-  font-size: 3rem ;
-}
+
 .hamburger{
   display:none;
 }
@@ -226,8 +192,8 @@
   align-items: center;
   background-color: rgba(1, 13, 36, 0.868)/*#213967*/;
   background-image: url(/assets/images/bg/contactBackground.png);
-  padding: 1rem 5rem 1rem 5rem;
-  color: rgb(0, 44, 116);
+  padding: 1rem 6rem 1rem 6rem;
+  color: white;
   height: auto;
   width: vw;
 }
@@ -236,13 +202,11 @@
   display: flex;
   align-items: center;
   gap: 2rem;
-  margin: 1rem;
 }
 
 .club-logo {
   width: 100px;
-  justify-content: center;
-  align-items: center;
+  margin-right: 1rem;
 }
 
 .club-info h3 {
@@ -259,7 +223,7 @@
 .footer-right {
   text-align: center;
   background-color: #28416fae;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 1rem 2rem 1rem 2rem;
   border-radius: 20px;
 }
 
@@ -273,12 +237,12 @@
   display: flex;
   justify-content: center;
   gap: 50px;
-  margin: 0px 1rem 0px 1rem;
+  margin: 0px 20px 0px 20px;
 }
 
 .social-icon {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 25px;
+  height: 25px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 

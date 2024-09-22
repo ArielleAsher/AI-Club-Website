@@ -31,7 +31,7 @@
     transition: 0.7s ease;
     background-color: rgba(238, 106, 128, 0.785);
     border-radius: 20px;
-    height: 40vh;
+    height: 45vh;
     width: 24vw; /* Default width, adjusted for different layouts */
     display: block;
     text-align: center;
@@ -43,7 +43,6 @@
     transition: width 0.7s ease, background-color 0.7s ease;
     background-color: rgba(238, 106, 128, 0.785);
     border-radius: 20px;
-    height: 40vh;
     display: block;
 }
 .carousel-item.expand .expanded-member{

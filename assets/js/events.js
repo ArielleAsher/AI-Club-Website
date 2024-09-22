@@ -14,7 +14,7 @@ document.querySelectorAll('.pecard-wrap').forEach(function (pecardWrap) {
         const mouseX = e.pageX - pecardWrap.offsetLeft - width / 2;
         const mouseY = e.pageY - pecardWrap.offsetTop - height / 2;
         const rX = (mouseX / width) * 30;
-        const rY = (mouseY / height) * -30;
+        const rY = (mouseY / height) * 30;
 
         pecard.style.transform = `rotateY(${rX}deg) rotateX(${rY}deg)`;
     });
