@@ -51,10 +51,10 @@ body {
 .team-member {
     position: relative;
     transition: 0.7s ease;
-    background-color: rgba(238, 106, 128, 0.785);
+    background-color: rgba(12, 8, 50, 0.785);
     border-radius: 20px;
-    height: 40vh;
-    width: 24vw; /* Default width, adjusted for different layouts */
+    height: 44vh;
+    width: 27vw; /* Default width, adjusted for different layouts */
     display: block;
     text-align: center;
 }
@@ -89,7 +89,7 @@ body {
     border-radius: 0 0 20px 20px;
     background-color: rgb(0,0,0,0.9);
     width: 100%;
-    height: 30%;
+    height: 25%;
     left: 0;
 }
 .normal-member .member-name{
