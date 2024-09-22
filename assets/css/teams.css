@@ -9,7 +9,7 @@ body {
 
 /* Background image */
 .the-background-div {
-    /* background: url(/assets/images/bg/newestBgLight.png); */
+    background: url(/assets/images/bg/newestBgLight.png);
     background-position: center;
     padding: 2rem 0;
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@ body {
     font-weight: 700;
     color: white;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.3rem;
     background: linear-gradient(90.23deg, #000000 , rgb(6, 6, 6), #9eccff, #98faff, rgb(0, 0, 0), black );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -33,7 +33,7 @@ body {
     color: white;
     margin-bottom: 3vw;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 /* Main cards container */
@@ -53,7 +53,7 @@ body {
     transition: 0.7s ease;
     background-color: rgba(12, 8, 50, 0.785);
     border-radius: 20px;
-    height: 44vh;
+    height: 47vh;
     width: 27vw; /* Default width, adjusted for different layouts */
     display: block;
     text-align: center;
@@ -72,7 +72,7 @@ body {
 
 /* Normal view */
 .normal-member{
-    max-width: 300px;
+    max-width: 400px;
 }
 .normal-member img{
     position: absolute;
@@ -89,20 +89,20 @@ body {
     border-radius: 0 0 20px 20px;
     background-color: rgb(0,0,0,0.9);
     width: 100%;
-    height: 25%;
+    height: 21%;
     left: 0;
 }
 .normal-member .member-name{
     display: block;
     margin-top: 1rem;
     color: white ;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     z-index: 20;
 }
 .normal-member .member-pos{
     display: block;
     color: white ;
-    font-size: 1rem;
+    font-size: 1.1rem;
     z-index: 20;
 }
 
@@ -145,6 +145,8 @@ body {
 }
 
 .expanded-member .icons i{
+    /* position: absolute; */
+    /* bottom: 20%; */
     font-size: 1.7rem;
     color: rgb(212, 215, 215);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
