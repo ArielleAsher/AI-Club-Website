@@ -16,8 +16,10 @@
   padding: 10px 10px 10px 10px;
   /* position: relative;  */
   z-index: 1;
-  width: 100%;
+  width: 100%
+  height: auto;
   box-sizing: border-box; 
+  /* overflow:auto */
 }
 /* 
 .sidebarMenu{
@@ -141,46 +143,58 @@
 
 @media screen and (max-width: 1010px) {
 
+  .navbar{
+    /* overflow: hidden; */
+    gap: 0px;
+  }
+
   .btn{
     background-color:rgba(6, 21, 21, 0);
     border:none;
-    margin-left: 50px;
+    /* margin-left: 50px; */
     display: flex;
+    /* margin-right: 10px; */
   }
   
   .hamburger{
     /* display:block; */
-    margin-left: 2px;
+    /* margin-left: rem; */
     cursor: pointer;
+    width: 60%;
+    overflow: hidden;
   }
 
   .hamburger.active .bar:nth-child(1){
     transition: all 0.2sec ease-in-out;
   }
   .hamburger.active .bar:nth-child(2){
-    transform: translateY(4px);
+    transform: translateY(0.1rem);
   }
   .hamburger.active .bar:nth-child(3){
-    transform: translateY(4px);
+    transform: translateY(0.1rem);
   }
   .hamburger.active .bar:nth-child(4){
-    transform: translateY(4px);
+    transform: translateY(0.1rem);
   }
   .hamburger.active .bar:nth-child(5){
-    transform: translateY(4px);
+    transform: translateY(0.1rem);
   }
+
+  /* .navbar sidebarMenu{
+    margin-left: 0px;
+  } */
 
   .bar{
     align-items: center;
     display: inline-flex;
-    width: 100vh;
+    width: 90vh;
     padding-left: 25%;
     padding-top: 0px;
     padding-bottom: 2px;
     height: 30px;
     text-align:center;
     font-size: larger;
-    margin: 1px auto;
+    margin: 1px 0px 0px 0px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: rgb(2, 15, 27);
@@ -188,7 +202,7 @@
 
   .navbar .a1{
     font-size:medium;
-    padding: 15px 15px 5px;
+    /* padding: 15px 15px 5px; */
   }
 
   .navbar {
@@ -200,21 +214,46 @@
     letter-spacing: .2rem;
     line-height: normal; */
     display: none;
+    margin-left: 0px;
   }
   .navbar .nav-left{
     flex-direction: row;
     text-align: center;
     letter-spacing: .1rem;
-    line-height: 45px;
+    line-height: 35px;
   }
   .navbar .nav-left img{
-    margin-right: auto;
-    margin-right: 20px;
+    margin-left:0.3rem;
+    width: 5rem;
+    height: auto;
   }
+
   .navbar a {
     font-size: small;
     padding: 15px 15px 5px;
     text-decoration: none;
+  }
+
+  .nav-left{
+    gap: 0px;
+    padding: 0px;
+    width: 70%vw;
+    margin: 0px;;
+
+  }
+
+  .btn{
+    margin: 0px;
+    height: auto;
+    width: auto;
+    margin-right: 0.5rem;
+    margin-left: 0.3rem;
+  }
+
+  .txt{
+    font-size: smaller;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
@@ -262,6 +301,7 @@
 .club-info p {
   font-size: 16px;
   color: white;
+  line-height: 1rem;
 }
 
 .footer-right {
@@ -296,9 +336,10 @@
 }
 .copyright{
   color: white;
-  padding-top: 1rem;
-  padding-bottom: 3rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
   text-align: center;
+  line-height: 1rem;
 }
 @media (max-width: 908px) {
   .topfooter {
