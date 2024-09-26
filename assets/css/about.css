@@ -24,16 +24,17 @@ body {
     position: relative;
     width: 50vw;
     height: 500px;
+    margin-left: 0px;
 }
 
 .orbit {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 30%;
     width: 50px; /* Adjusted for tag size */
     height: 50px; /* Adjusted for tag size */
     margin-top: -25px; /* Adjusted for centering the tags */
-    margin-left: -25px; /* Adjusted for centering the tags */
+    margin-left: -px; /*Adjusted for centering the tags*/
     
 }
 
@@ -53,7 +54,7 @@ body {
 .or {
     position: relative;
     top: 50%; /* Adjusted to center vertically */
-    left: 50%; /* Adjusted to center horizontally */
+    left: 40%; /* Adjusted to center horizontally */
     width: 350px;
     height: 340px;
     margin: -170px 0 0 -175px; /* Adjusted for centering */
@@ -66,7 +67,7 @@ body {
     size: 500px;
     position: absolute;
     top: 46%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
     width: 300px;
 }
@@ -83,12 +84,15 @@ body {
     color: #ffffff;
     padding: 20px;
     border-radius: 10px;
-    width: 400px;
+    /* width: 20rem; */
+    max-width: 20rem;
+    height: auto;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     text-align: center;
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
+    margin: 1rem;
 }
 
 .ai-club-box h1 {
@@ -121,6 +125,12 @@ body {
     transform: scale(1.05);
 }
 
+.orbit-points{
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0rem 0rem 1rem;
+    display: none;
+}
 
 @media screen and (max-width:1000px){
     .about-us-rotate{
@@ -130,5 +140,9 @@ body {
     .orbit-container{
         display: none;
 
+    }
+
+    .orbit-points{
+        display: block;
     }
 }
