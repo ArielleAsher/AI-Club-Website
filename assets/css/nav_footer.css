@@ -16,7 +16,7 @@
   padding: 10px 10px 10px 10px;
   /* position: relative;  */
   z-index: 1;
-  width: 100%
+  width: 100%;
   height: auto;
   box-sizing: border-box; 
   /* overflow:auto */
@@ -257,7 +257,6 @@
   }
 }
 
-
 /* Footer */
 .footer {
   background-color: rgba(1, 13, 36, 0.868)/*#213967*/;
@@ -355,3 +354,9 @@
       flex-direction: column;
   }
 }
+
+
+
+
+
+

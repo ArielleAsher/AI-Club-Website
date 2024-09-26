@@ -27,3 +27,20 @@ function nav_toggle() {
 function closeMenu() {
     document.getElementById("t1").style.display="none"
 }
+
+
+
+// const hamburger = document.querySelector('.hamburger');
+// const menu = document.querySelector('#t1');
+
+// function nav_toggle() {
+//   hamburger.classList.toggle('active'); // Toggle active state of hamburger
+//   menu.classList.toggle('show'); // Toggle visibility of the menu
+// }
+
+// function closeMenu() {
+//   hamburger.classList.remove('active'); // Remove active state
+//   menu.classList.remove('show'); // Hide the menu
+// }
+
+// hamburger.addEventListener('click', nav_toggle);

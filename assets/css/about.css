@@ -121,8 +121,14 @@ body {
     transform: scale(1.05);
 }
 
+
 @media screen and (max-width:1000px){
     .about-us-rotate{
         flex-direction: column;
+    }
+
+    .orbit-container{
+        display: none;
+
     }
 }

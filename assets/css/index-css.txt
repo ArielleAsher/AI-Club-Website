@@ -86,3 +86,210 @@ body {
   text-align: center;
 }
 
+
+<div class="orbit-points">
+              <div class="orbit-point" style="background-image: url('../assets/logo/tag1.png')"></div>
+              <div class="orbit-point" style="background-image: url('../assets/logo/tag2.png')"></div>
+              <div class="orbit-point" style="background-image: url('../assets/logo/tag3.png')"></div>
+            </div>
+
+             .orbit-container{
+        display: none;
+
+    }
+
+.orbit-points{
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+}
+
+@media screen and (max-width: 1010px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  #t1 {
+    display: none; /* Hidden by default */
+    background-color: rgba(1, 13, 36, 0.868);
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .hamburger.active + #t1 {
+    display: block; /* Show menu when hamburger is active */
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
+
+
+@media screen and (max-width: 1010px) {
+
+  .navbar{
+    /* overflow: hidden; */
+    gap: 0px;
+  }
+
+  .btn{
+    background-color:rgba(6, 21, 21, 0);
+    border:none;
+    /* margin-left: 50px; */
+    display: flex;
+    /* margin-right: 10px; */
+  }
+  
+  .hamburger{
+    display:block;
+    /* margin-left: rem; */
+    cursor: pointer;
+    width: 1rem;
+    height: 1.5rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* .hamburger.active .bar:nth-child(1){
+    transition: all 0.2sec ease-in-out;
+  }
+  .hamburger.active .bar:nth-child(2){
+    transform: translateY(0.1rem);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(0.1rem);
+  }
+  .hamburger.active .bar:nth-child(4){
+    transform: translateY(0.1rem);
+  }
+  .hamburger.active .bar:nth-child(5){
+    transform: translateY(0.1rem);
+  } */
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0; /* MODIFIED: Hide middle bar */
+  }
+  
+  .hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  /* MODIFIED: Show hidden menu when hamburger is active */
+  .hamburger.active + #t1 {
+    display: block;
+  }
+  
+  #t1 {
+    display: none; /* MODIFIED: Initially hide the menu */
+  }
+  /* .navbar sidebarMenu{
+    margin-left: 0px;
+  } */
+
+  .bar{
+    align-items: center;
+    display: inline-flex;
+    width: 90vh;
+    padding-left: 25%;
+    padding-top: 0px;
+    padding-bottom: 2px;
+    height: 30px;
+    text-align:center;
+    font-size: larger;
+    margin: 1px 0px 0px 0px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(2, 15, 27);
+    width: 100%; 
+    height: 5px; 
+    background-color: white; 
+    margin: 6px 0; 
+    transition: all 0.3s ease; 
+  }
+
+  .navbar .a1{
+    font-size:medium;
+    /* padding: 15px 15px 5px; */
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar .nav-right {
+    /* flex-direction: row;
+    padding: 5px 0px;
+    letter-spacing: .2rem;
+    line-height: normal; */
+    display: none;
+    margin-left: 0px;
+  }
+  .navbar .nav-left{
+    flex-direction: row;
+    text-align: center;
+    letter-spacing: .1rem;
+    line-height: 35px;
+  }
+  .navbar .nav-left img{
+    margin-left:0.3rem;
+    width: 5rem;
+    height: auto;
+  }
+
+  .navbar a {
+    font-size: small;
+    padding: 15px 15px 5px;
+    text-decoration: none;
+  }
+
+  .nav-left{
+    gap: 0px;
+    padding: 0px;
+    width: 70%vw;
+    margin: 0px;;
+
+  }
+
+  .btn{
+    margin: 0px;
+    height: auto;
+    width: auto;
+    margin-right: 0.5rem;
+    margin-left: 0.3rem;
+  }
+
+  .txt{
+    font-size: smaller;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
