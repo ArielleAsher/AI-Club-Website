@@ -53,7 +53,7 @@ body {
     transition: 0.7s ease;
     background-color: rgba(12, 8, 50, 0.785);
     border-radius: 20px;
-    height: 43vh;
+    height: 47vh;
     width: 27vw; /* Default width, adjusted for different layouts */
     display: block;
     text-align: center;
